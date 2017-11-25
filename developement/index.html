@@ -1,0 +1,58 @@
+<html ng-app="utility">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+
+    <script src="./lib/angular/angular.min.js"></script>
+    <script src="./lib/angular-route/angular-route.js"></script>
+    <script src="./lib/jquery/dist/jquery.min.js"></script>
+    <script src="./lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-cookies.js"></script>
+
+
+    <script src="./javascripts/controllers/main.js"></script>
+    <script src="./javascripts/controllers/landingCtrl.js"></script>
+
+    <base href="/">
+
+
+</head>
+
+<body ng-controller="MainController">
+
+    <!--
+    <div class="nav-menu">
+        <div class="appName">Utility Manager</div>
+
+        <div class="services" ng-click=urlChange("#/services") ng-show="serviceView">Services</div>
+
+    </div>-->
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Utility Manager</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <!--<li class="active"><a href="#">Home</a></li>-->
+                <!--<li><a href="#">Page 1</a></li>-->
+                <li><a href="#/services" ng-show="serviceView">Services</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-click=logout() ng-show="serviceView"><span class="glyphicon glyphicon-user"></span>LogOut</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--<hr>-->
+    <ng-view></ng-view>
+</body>
+
+</html>

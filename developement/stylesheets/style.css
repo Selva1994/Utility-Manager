@@ -1,0 +1,109 @@
+
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}*/
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+  z-index: 200;
+  /*position: fixed;*/
+  background-color: dodgerblue;
+  color: white;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: lightslategray;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  font-size: 15px;
+}
+
+.navbar-right {
+  margin-right: 20px;
+  margin-top: 17px;
+}
+
+.navbar-right:hover {
+  cursor: pointer;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 9%;
+  /*opacity: 0.2;*/
+  background-color: dodgerblue;
+  position: absolute;
+  z-index: 200;
+}
+
+.nav-menu>.appName {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 20px;
+  color: white;
+  width: 150px;
+  float: left;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top: 1px solid orange;
+}
+
+.services {
+  margin-left: 600px;
+  margin-top: 30px;
+  height: 40px;
+  width: 70px;
+  color: white;
+}
+
+.services:hover {
+  /*color: white;*/
+  font-size: 15px;
+}
+
+.nav-menu>.appName:hover {
+  font-size: 21px;
+  /*color: white;*/
+}
+
+.nav>li {
+  margin-left: 350px;
+  /*font-size: 10 ;*/
+}
+
+.landing>img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.loginContainer {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  margin-top: 15%;
+  margin-left: 7%;
+}
+
+.loginBtn {
+  margin-left: 100px;
+}
