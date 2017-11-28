@@ -26,6 +26,9 @@ app.controller('serviceController', function ($scope, $rootScope, $cookies) {
     }else{
         $rootScope.urlChange('/');
     }
+    $scope.service = function(url){
+        $rootScope.urlChange(url);
+    }
 });
 
 //Route Configuration
@@ -36,7 +39,10 @@ app.config(function ($routeProvider) {
             controller: "loginController"
         })
         .when('/services', {
-            templateUrl: "../views/services.html",
+            templateUrl: "../../views/services.html",
+            controller: "serviceController"
+        }).when('/busBooking', {
+            templateUrl: "../../views/busBooking.html",
             controller: "serviceController"
         });
 });

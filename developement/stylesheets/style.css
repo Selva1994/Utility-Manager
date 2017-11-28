@@ -1,18 +1,7 @@
-
-/*body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}*/
-
 .navbar {
   margin-bottom: 0px;
   border-radius: 0px;
   z-index: 200;
-  /*position: fixed;*/
   background-color: dodgerblue;
   color: white;
 }
@@ -45,7 +34,6 @@ a {
 .nav-menu {
   width: 100%;
   height: 9%;
-  /*opacity: 0.2;*/
   background-color: dodgerblue;
   position: absolute;
   z-index: 200;
@@ -60,33 +48,12 @@ a {
   float: left;
 }
 
-hr {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border-top: 1px solid orange;
-}
-
-.services {
-  margin-left: 600px;
-  margin-top: 30px;
-  height: 40px;
-  width: 70px;
-  color: white;
-}
-
-.services:hover {
-  /*color: white;*/
-  font-size: 15px;
-}
-
 .nav-menu>.appName:hover {
   font-size: 21px;
-  /*color: white;*/
 }
 
 .nav>li {
   margin-left: 350px;
-  /*font-size: 10 ;*/
 }
 
 .landing>img {
@@ -106,4 +73,44 @@ hr {
 
 .loginBtn {
   margin-left: 100px;
+}
+
+
+/*Services page*/
+
+.services {
+  /*background-image: url("../images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.7;
+}
+.service-container {
+  margin-top:5%;
+  margin-left:10%;
+  width: 80%;
+  height: 100%;
+  /*background-color: lightblue;*/
+}
+.service {
+  margin-left: 5%;
+  margin-top:5%;
+  padding-left: 5%;
+  padding-top: 7%;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-size: 20px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color:#8592c1;
+  color: black;  
+  transition: background-color 0.7s;
+}
+.service:hover {
+  background-color: #133d67;
+  color: white;
+  cursor: pointer;
 }
