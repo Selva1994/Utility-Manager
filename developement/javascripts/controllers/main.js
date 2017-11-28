@@ -20,14 +20,11 @@ app.controller('MainController', function ($scope, $rootScope, $location, $cooki
 });
 
 app.controller('serviceController', function ($scope, $rootScope, $cookies) {
-    alert('dgsdfs')
 
     if ($rootScope.validateCookie()) {
-        // $scope.$apply(function () {
-        // $scope.message = "Timeout called!";
         $rootScope.serviceView = true;
-
-        // });
+    }else{
+        $rootScope.urlChange('/');
     }
 });
 

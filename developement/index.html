@@ -24,13 +24,6 @@
 
 <body ng-controller="MainController">
 
-    <!--
-    <div class="nav-menu">
-        <div class="appName">Utility Manager</div>
-
-        <div class="services" ng-click=urlChange("#/services") ng-show="serviceView">Services</div>
-
-    </div>-->
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -38,8 +31,6 @@
                 <a class="navbar-brand" href="#">Utility Manager</a>
             </div>
             <ul class="nav navbar-nav">
-                <!--<li class="active"><a href="#">Home</a></li>-->
-                <!--<li><a href="#">Page 1</a></li>-->
                 <li><a href="#/services" ng-show="serviceView">Services</a></li>
             </ul>
 
@@ -51,7 +42,6 @@
     </nav>
 
 
-    <!--<hr>-->
     <ng-view></ng-view>
 </body>
 
